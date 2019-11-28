@@ -1,0 +1,2 @@
+# Ignore import metadata from the godot editor.
+*.import
