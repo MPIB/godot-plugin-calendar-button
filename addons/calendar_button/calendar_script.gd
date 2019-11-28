@@ -90,18 +90,10 @@ func setup_calendar_button():
 	set_toggle_mode(true)
 	
 	# Set "Normal" Button Texture
-	var image_normal = Image.new()
-	image_normal.load(btn_img_path + "btn_32x32_03.png")
-	var image_texture_normal = ImageTexture.new()
-	image_texture_normal.create_from_image(image_normal)
-	set_normal_texture(image_texture_normal)
+	set_normal_texture(load(btn_img_path + "btn_32x32_03.png"))
 
 	# Set "Pressed" Button Texture
-	var image_pressed = Image.new()
-	image_pressed.load(btn_img_path + "btn_32x32_04.png")
-	var image_texture_pressed = ImageTexture.new()
-	image_texture_pressed.create_from_image(image_pressed)
-	set_pressed_texture(image_texture_pressed)
+	set_pressed_texture(load(btn_img_path + "btn_32x32_04.png"))
 
 
 # Load data on _init
