@@ -75,9 +75,9 @@ func get_weekday(d, m, y):
 # Returns the weekday name
 func get_weekday_name(d, m, y):
 	var day_num = get_weekday(d, m, y)
-	return weekday_name[day_num]
+	return tr(weekday_name[day_num])
 
 
 # Returns the name of the current month
 func get_month_name(num):
-	return month_name[num-1]
+	return tr(month_name[num-1])
